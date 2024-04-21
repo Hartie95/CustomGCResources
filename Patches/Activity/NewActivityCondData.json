@@ -1,5 +1,366 @@
 [
     {
+        "condId": 10011,
+        "onValidExec": [
+            {
+                "type": "ACTIVITY_ACTION_ACCEPT_QUEST",
+                "param": [
+                    4000100,
+                    4000101,
+                    4000601
+                ]
+            },
+            {
+                "type": "ACTIVITY_ACTION_UNLOCK_POINT",
+                "param": [
+                    150
+                ]
+            },
+            {
+                "type": "ACTIVITY_ACTION_UNLOCK_POINT",
+                "param": [
+                    151
+                ]
+            },
+            {
+                "type": "ACTIVITY_ACTION_ACTIVE_GROUP",
+                "param": [
+                    301001009
+                ]
+            }
+        ],
+        "onInvalidExec": [
+            {
+                "type": "ACTIVITY_ACTION_CANCEL_QUEST",
+                "param": [
+                    40001,
+                    40006
+                ]
+            },
+            {
+                "type": "ACTIVITY_ACTION_LOCK_POINT",
+                "param": [
+                    150
+                ]
+            },
+            {
+                "type": "ACTIVITY_ACTION_LOCK_POINT",
+                "param": [
+                    151
+                ]
+            }
+        ]
+    },
+    {
+        "condId": 10013,
+        "onValidExec": [
+            {
+                "type": "ACTIVITY_ACTION_ACCEPT_QUEST",
+                "param": [
+                    4000201
+                ]
+            }
+        ],
+        "onInvalidExec": [
+            {
+                "type": "ACTIVITY_ACTION_CANCEL_QUEST",
+                "param": [
+                    40002
+                ]
+            }
+        ]
+    },
+    {
+        "condId": 10014,
+        "onValidExec": [
+            {
+                "type": "ACTIVITY_ACTION_ACCEPT_QUEST",
+                "param": [
+                    4000301
+                ]
+            }
+        ],
+        "onInvalidExec": [
+            {
+                "type": "ACTIVITY_ACTION_CANCEL_QUEST",
+                "param": [
+                    40003
+                ]
+            }
+        ]
+    },
+    {
+        "condId": 10015,
+        "onValidExec": [
+            {
+                "type": "ACTIVITY_ACTION_ACCEPT_QUEST",
+                "param": [
+                    4000401
+                ]
+            }
+        ],
+        "onInvalidExec": [
+            {
+                "type": "ACTIVITY_ACTION_CANCEL_QUEST",
+                "param": [
+                    40004
+                ]
+            }
+        ]
+    },
+    {
+        "condId": 10016,
+        "onValidExec": [
+            {
+                "type": "ACTIVITY_ACTION_ACCEPT_QUEST",
+                "param": [
+                    4000501
+                ]
+            }
+        ],
+        "onInvalidExec": [
+            {
+                "type": "ACTIVITY_ACTION_CANCEL_QUEST",
+                "param": [
+                    40005
+                ]
+            }
+        ]
+    },
+    {
+        "condId": 10017,
+        "onValidExec": [
+            {
+                "type": "ACTIVITY_ACTION_ACTIVE_GROUP",
+                "param": [
+                    301001008
+                ]
+            }
+        ],
+        "onInvalidExec": []
+    },
+    {
+        "condId": 10018,
+        "onValidExec": [
+            {
+                "type": "ACTIVITY_ACTION_ACTIVE_GROUP",
+                "param": [
+                    301001003
+                ]
+            },
+            {
+                "type": "ACTIVITY_ACTION_FORBID_GROUP",
+                "param": [
+                    133104474
+                ]
+            }
+        ],
+        "onInvalidExec": []
+    },
+    {
+        "condId": 10019,
+        "onValidExec": [
+            {
+                "type": "ACTIVITY_ACTION_ACTIVE_GROUP",
+                "param": [
+                    301001002
+                ]
+            },
+            {
+                "type": "ACTIVITY_ACTION_FORBID_GROUP",
+                "param": [
+                    133104006
+                ]
+            }
+        ],
+        "onInvalidExec": []
+    },
+    {
+        "condId": 10020,
+        "onValidExec": [
+            {
+                "type": "ACTIVITY_ACTION_ACTIVE_GROUP",
+                "param": [
+                    301001005
+                ]
+            },
+            {
+                "type": "ACTIVITY_ACTION_FORBID_GROUP",
+                "param": [
+                    133106144
+                ]
+            }
+        ],
+        "onInvalidExec": []
+    },
+    {
+        "condId": 10021,
+        "onValidExec": [
+            {
+                "type": "ACTIVITY_ACTION_ACTIVE_GROUP",
+                "param": [
+                    301001006
+                ]
+            }
+        ],
+        "onInvalidExec": []
+    },
+    {
+        "condId": 500101,
+        "onValidExec": [
+            {
+                "type": "ACTIVITY_ACTION_ACTIVE_GROUP",
+                "param": [
+                    305001001
+                ]
+            },
+            {
+                "type": "ACTIVITY_ACTION_ACCEPT_QUEST",
+                "param": [
+                    4091101,
+                    4091104
+                ]
+            }
+        ],
+        "onInvalidExec": [
+            {
+                "type": "ACTIVITY_ACTION_CANCEL_QUEST",
+                "param": [
+                    40911
+                ]
+            }
+        ]
+    },
+    {
+        "condId": 500102,
+        "onValidExec": [
+            {
+                "type": "ACTIVITY_ACTION_OPEN_MP_PLAY",
+                "param": [
+                    1
+                ]
+            }
+        ],
+        "onInvalidExec": [
+            {
+                "type": "ACTIVITY_ACTION_CLOSE_MP_PLAY",
+                "param": [
+                    1
+                ]
+            }
+        ]
+    },
+    {
+        "condId": 500103,
+        "onValidExec": [
+            {
+                "type": "ACTIVITY_ACTION_FORBID_GROUP",
+                "param": [
+                    133003151
+                ]
+            }
+        ],
+        "onInvalidExec": []
+    },
+    {
+        "condId": 5003001,
+        "onValidExec": [],
+        "onInvalidExec": []
+    },
+    {
+        "condId": 5003002,
+        "onValidExec": [],
+        "onInvalidExec": []
+    },
+    {
+        "condId": 5003101,
+        "onValidExec": [
+            {
+                "type": "ACTIVITY_ACTION_ACTIVE_GROUP",
+                "param": [
+                    305003001
+                ]
+            }
+        ],
+        "onInvalidExec": []
+    },
+    {
+        "condId": 5003102,
+        "onValidExec": [],
+        "onInvalidExec": []
+    },
+    {
+        "condId": 5003103,
+        "onValidExec": [],
+        "onInvalidExec": []
+    },
+    {
+        "condId": 5003104,
+        "onValidExec": [],
+        "onInvalidExec": []
+    },
+    {
+        "condId": 5003105,
+        "onValidExec": [],
+        "onInvalidExec": []
+    },
+    {
+        "condId": 5003106,
+        "onValidExec": [],
+        "onInvalidExec": []
+    },
+    {
+        "condId": 5003107,
+        "onValidExec": [],
+        "onInvalidExec": []
+    },
+    {
+        "condId": 5003108,
+        "onValidExec": [
+            {
+                "type": "ACTIVITY_ACTION_ACTIVE_GROUP",
+                "param": [
+                    305003001
+                ]
+            }
+        ],
+        "onInvalidExec": []
+    },
+    {
+        "condId": 5012001,
+        "onValidExec": [],
+        "onInvalidExec": []
+    },
+    {
+        "condId": 5012002,
+        "onValidExec": [],
+        "onInvalidExec": []
+    },
+    {
+        "condId": 5012003,
+        "onValidExec": [
+            {
+                "type": "ACTIVITY_ACTION_LOAD_DYNAMIC_GROUP",
+                "param": [
+                    133004062
+                ]
+            }
+        ],
+        "onInvalidExec": [
+            {
+                "type": "ACTIVITY_ACTION_UNLOAD_DYNAMIC_GROUP",
+                "param": [
+                    133004062
+                ]
+            }
+        ]
+    },
+    {
+        "condId": 5012004,
+        "onValidExec": [],
+        "onInvalidExec": []
+    },
+    {
         "condId" : 5033001,
         "onValidExec":[
             {
