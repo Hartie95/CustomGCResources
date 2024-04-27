@@ -3588,18 +3588,6 @@
         "onInvalidExec": []
     },
     {
-        "condId": 5023010,
-        "onValidExec": [
-            {
-                "type": "ACTIVITY_ACTION_SET_SCORE_LIMIT",
-                "param": [
-                    5023001
-                ]
-            }
-        ],
-        "onInvalidExec": []
-    },
-    {
         "condId": 5023003,
         "onValidExec": [
             {
@@ -3684,6 +3672,18 @@
         "onInvalidExec": []
     },
     {
+        "condId": 5023010,
+        "onValidExec": [
+            {
+                "type": "ACTIVITY_ACTION_SET_SCORE_LIMIT",
+                "param": [
+                    5023001
+                ]
+            }
+        ],
+        "onInvalidExec": []
+    },
+    {
         "condId": 5024001,
         "onValidExec": [
             {
@@ -3725,7 +3725,7 @@
         "condId": 5024003,
         "onValidExec": [
             {
-                "type": "ACTIVITY_ACTION_CANCEL_QUEST",
+                "type": "ACTIVITY_ACTION_CLOSE_FIND_HILICHURL_STAGE",
                 "param": [
                     70006,
                     70011,
@@ -4264,6 +4264,144 @@
                 "type": "ACTIVITY_ACTION_SEND_MAIL",
                 "param": [
                     26
+                ]
+            }
+        ],
+        "onInvalidExec": []
+    },
+    {
+        "condId": 5032001,
+        "onValidExec": [
+            {
+                "type": "ACTIVITY_ACTION_ACCEPT_QUEST",
+                "param": [
+                    7900701
+                ]
+            }
+        ],
+        "onInvalidExec": [
+            {
+                "type": "ACTIVITY_ACTION_CANCEL_QUEST",
+                "param": [
+                    79007
+                ]
+            }
+        ]
+    },
+    {
+        "condId": 5032002,
+        "onValidExec": [
+            {
+                "type": "ACTIVITY_ACTION_OPEN_BOUNCE_CONJURING_STAGE",
+                "param": [
+                    1
+                ]
+            }
+        ],
+        "onInvalidExec": []
+    },
+    {
+        "condId": 5032009,
+        "onValidExec": [
+            {
+                "type": "ACTIVITY_ACTION_UNLOCK_POINT",
+                "param": [
+                    25,
+                    4
+                ]
+            }
+        ],
+        "onInvalidExec": [
+            {
+                "type": "ACTIVITY_ACTION_LOCK_POINT",
+                "param": [
+                    25,
+                    4
+                ]
+            }
+        ]
+    },
+    {
+        "condId": 5032003,
+        "onValidExec": [
+            {
+                "type": "ACTIVITY_ACTION_OPEN_BOUNCE_CONJURING_STAGE",
+                "param": [
+                    2
+                ]
+            }
+        ],
+        "onInvalidExec": []
+    },
+    {
+        "condId": 5032004,
+        "onValidExec": [
+            {
+                "type": "ACTIVITY_ACTION_OPEN_BOUNCE_CONJURING_STAGE",
+                "param": [
+                    3
+                ]
+            }
+        ],
+        "onInvalidExec": []
+    },
+    {
+        "condId": 5032005,
+        "onValidExec": [],
+        "onInvalidExec": []
+    },
+    {
+        "condId": 5032006,
+        "onValidExec": [
+            {
+                "type": "ACTIVITY_ACTION_LOAD_DYNAMIC_GROUP",
+                "param": [
+                    144003052
+                ]
+            }
+        ],
+        "onInvalidExec": [
+            {
+                "type": "ACTIVITY_ACTION_UNLOAD_DYNAMIC_GROUP",
+                "param": [
+                    144003052
+                ]
+            }
+        ]
+    },
+    {
+        "condId": 5032007,
+        "onValidExec": [
+            {
+                "type": "ACTIVITY_ACTION_MODIFY_ACTIVITY_COND_DEFAULT",
+                "param": [
+                    5032006,
+                    0
+                ]
+            },
+            {
+                "type": "ACTIVITY_ACTION_LOAD_DYNAMIC_GROUP",
+                "param": [
+                    144003005
+                ]
+            }
+        ],
+        "onInvalidExec": [
+            {
+                "type": "ACTIVITY_ACTION_UNLOAD_DYNAMIC_GROUP",
+                "param": [
+                    144003005
+                ]
+            }
+        ]
+    },
+    {
+        "condId": 5032008,
+        "onValidExec": [
+            {
+                "type": "ACTIVITY_ACTION_SEND_MAIL",
+                "param": [
+                    24
                 ]
             }
         ],
@@ -4925,384 +5063,12 @@
                     144002033,
                     144004049,
                     144004050,
-                    144002053,
-                    {
-                        "condId": 5023001,
-                        "onValidExec": [
-                            {
-                                "type": "ACTIVITY_ACTION_LOAD_DYNAMIC_GROUP",
-                                "param": [
-                                    133004479
-                                ]
-                            },
-                            {
-                                "type": "ACTIVITY_ACTION_UNLOCK_POINT",
-                                "param": [
-                                    273
-                                ]
-                            }
-                        ],
-                        "onInvalidExec": [
-                            {
-                                "type": "ACTIVITY_ACTION_CANCEL_QUEST",
-                                "param": [
-                                    70659
-                                ]
-                            },
-                            {
-                                "type": "ACTIVITY_ACTION_UNLOAD_DYNAMIC_GROUP",
-                                "param": [
-                                    133004479
-                                ]
-                            },
-                            {
-                                "type": "ACTIVITY_ACTION_LOCK_POINT",
-                                "param": [
-                                    273
-                                ]
-                            }
-                        ]
-                    },
-                    {
-                        "condId": 5023002,
-                        "onValidExec": [],
-                        "onInvalidExec": []
-                    },
-                    {
-                        "condId": 5023012,
-                        "onValidExec": [
-                            {
-                                "type": "ACTIVITY_ACTION_ACCEPT_QUEST",
-                                "param": [
-                                    7066001,
-                                    7066005
-                                ]
-                            }
-                        ],
-                        "onInvalidExec": [
-                            {
-                                "type": "ACTIVITY_ACTION_CANCEL_QUEST",
-                                "param": [
-                                    70660
-                                ]
-                            }
-                        ]
-                    },
-                    {
-                        "condId": 5023013,
-                        "onValidExec": [
-                            {
-                                "type": "ACTIVITY_ACTION_UNLOCK_HIDE_AND_SEEK_MAP",
-                                "param": [
-                                    1001011,
-                                    1001012,
-                                    1001013,
-                                    1001009,
-                                    1001006,
-                                    1001015,
-                                    1001019,
-                                    1001026
-                                ]
-                            }
-                        ],
-                        "onInvalidExec": []
-                    },
-                    {
-                        "condId": 5023010,
-                        "onValidExec": [
-                            {
-                                "type": "ACTIVITY_ACTION_SET_SCORE_LIMIT",
-                                "param": [
-                                    5023001
-                                ]
-                            }
-                        ],
-                        "onInvalidExec": []
-                    },
-                    {
-                        "condId": 5023003,
-                        "onValidExec": [
-                            {
-                                "type": "ACTIVITY_ACTION_SET_SCORE_LIMIT",
-                                "param": [
-                                    5023002
-                                ]
-                            }
-                        ],
-                        "onInvalidExec": []
-                    },
-                    {
-                        "condId": 5023004,
-                        "onValidExec": [
-                            {
-                                "type": "ACTIVITY_ACTION_SET_SCORE_LIMIT",
-                                "param": [
-                                    5023003
-                                ]
-                            }
-                        ],
-                        "onInvalidExec": []
-                    },
-                    {
-                        "condId": 5023005,
-                        "onValidExec": [
-                            {
-                                "type": "ACTIVITY_ACTION_SET_SCORE_LIMIT",
-                                "param": [
-                                    5023004
-                                ]
-                            }
-                        ],
-                        "onInvalidExec": []
-                    },
-                    {
-                        "condId": 5023006,
-                        "onValidExec": [
-                            {
-                                "type": "ACTIVITY_ACTION_SET_SCORE_LIMIT",
-                                "param": [
-                                    5023005
-                                ]
-                            }
-                        ],
-                        "onInvalidExec": []
-                    },
-                    {
-                        "condId": 5023007,
-                        "onValidExec": [
-                            {
-                                "type": "ACTIVITY_ACTION_SET_SCORE_LIMIT",
-                                "param": [
-                                    5023006
-                                ]
-                            }
-                        ],
-                        "onInvalidExec": []
-                    },
-                    {
-                        "condId": 5023008,
-                        "onValidExec": [
-                            {
-                                "type": "ACTIVITY_ACTION_SET_SCORE_LIMIT",
-                                "param": [
-                                    5023007
-                                ]
-                            }
-                        ],
-                        "onInvalidExec": []
-                    },  144002055,
-                    144004015,
-                    144002069,
-                    144002041,
-                    144003048,
-                    144002079,
-                    144002080,
-                    144002068,
-                    144004079,
-                    144004081,
-                    144002081,
-                    144002078,
-                    144003054,
-                    144003055,
-                    144003056,
-                    144003057,
-                    144002040,
-                    144002085,
-                    144002086,
-                    144002087,
-                    144002088,
-                    144004020,
-                    144002042,
-                    144002089,
-                    144004009,
-                    144002090,
-                    144003053,
-                    144004026,
-                    144004061,
-                    144004062,
-                    144004080,
-                    144004039,
-                    144004045,
-                    144002056,
-                    144002058,
-                    144002043,
-                    144004011,
-                    144004018,
-                    144004047,
-                    144002052,
-                    144001058,
-                    144001157,
-                    144002045,
-                    144002048,
-                    144002057,
-                    144002035,
-                    144004048,
-                    144004064,
-                    144003058,
-                    144004066,
-                    144005002,
-                    144004005,
-                    144004103,
-                    144003002,
-                    144003003,
-                    144003004,
-                    144002016,
-                    144002017,
-                    144002018,
-                    144002019,
-                    144002020,
-                    144002021,
-                    144002022,
-                    144002023,
-                    144002024,
-                    144002025,
-                    144002026,
-                    144002039,
-                    144004104,
-                    144002097,
-                    144004129,
-                    144004131,
-                    144004016,
-                    144004030,
-                    144002034,
-                    144004044,
-                    144004055,
-                    144004056,
-                    144002036,
-                    144004060,
-                    144002063,
-                    144002044,
-                    144002098,
-                    144002099,
-                    144003019
-                ]
-            },
-            {
-                "type": "ACTIVITY_ACTION_MODIFY_ACTIVITY_COND_DEFAULT",
-                "param": [
-                    5033017,
-                    0
-                ]
-            }
-        ],
-        "onInvalidExec": [
-            {
-                "type": "ACTIVITY_ACTION_UNLOAD_DYNAMIC_GROUP",
-                "param": [
-                    144003007,
-                    144002038,
-                    144002046,
-                    144005004,
-                    144005003,
-                    144002014,
-                    144004007,
-                    144002012,
-                    144002015,
-                    144001010,
-                    144002013,
-                    144004012,
-                    144004014,
-                    144004046,
-                    144002001,
-                    144002003,
-                    144002027,
-                    144002030,
-                    144002031,
-                    144002032,
-                    144002033,
-                    144004049,
-                    144004050,
-                    144002053,
-                    144002055,
-                    144004015,
-                    144002069,
-                    144002041,
-                    144003048,
-                    144002079,
-                    144002080,
-                    144002068,
-                    144004079,
-                    144004081,
-                    144002081,
-                    144002078,
-                    144003054,
-                    144003055,
-                    144003056,
-                    144003057,
-                    144002040,
-                    144002085,
-                    144002086,
-                    144002087,
-                    144002088,
-                    144004020,
-                    144002042,
-                    144002089,
-                    144004009,
-                    144002090,
-                    144003053,
-                    144004026,
-                    144004061,
-                    144004062,
-                    144004080,
-                    144004039,
-                    144004045,
-                    144002056,
-                    144002058,
-                    144002043,
-                    144004011,
-                    144004018,
-                    144004047,
-                    144002052,
-                    144001058,
-                    144001157,
-                    144002045,
-                    144002048,
-                    144002057,
-                    144002035,
-                    144004048,
-                    144004064,
-                    144003058,
-                    144004066,
-                    144005002,
-                    144004005,
-                    144004103,
-                    144003002,
-                    144003003,
-                    144003004,
-                    144002016,
-                    144002017,
-                    144002018,
-                    144002019,
-                    144002020,
-                    144002021,
-                    144002022,
-                    144002023,
-                    144002024,
-                    144002025,
-                    144002026,
-                    144002039,
-                    144004104,
-                    144002097,
-                    144004129,
-                    144004131,
-                    144004016,
-                    144004030,
-                    144002034,
-                    144004044,
-                    144004055,
-                    144004056,
-                    144002036,
-                    144004060,
-                    144002063,
-                    144002044,
-                    144002098,
-                    144002099,
-                    144003019
-                ]
-            }
-        ]
-    },
-    {
+                    144002053
+                    ]
+                }
+            ]
+        },
+        {
         "condId": 5033019,
         "onValidExec": [
             {
@@ -5770,6 +5536,119 @@
                 ]
             }
         ]
+    },
+    {
+        "condId": 5034001,
+        "onValidExec": [
+            {
+                "type": "ACTIVITY_ACTION_LOAD_DYNAMIC_GROUP",
+                "param": [
+                    133209014,
+                    133209029
+                ]
+            },
+            {
+                "type": "ACTIVITY_ACTION_UNLOCK_POINT",
+                "param": [
+                    315
+                ]
+            },
+            {
+                "type": "ACTIVITY_ACTION_ACCEPT_QUEST",
+                "param": [
+                    7265001
+                ]
+            }
+        ],
+        "onInvalidExec": [
+            {
+                "type": "ACTIVITY_ACTION_UNLOAD_DYNAMIC_GROUP",
+                "param": [
+                    133209014,
+                    133209029
+                ]
+            },
+            {
+                "type": "ACTIVITY_ACTION_LOCK_POINT",
+                "param": [
+                    315
+                ]
+            },
+            {
+                "type": "ACTIVITY_ACTION_CANCEL_QUEST",
+                "param": [
+                    72650
+                ]
+            }
+        ]
+    },
+    {
+        "condId": 5034002,
+        "onValidExec": [
+            {
+                "type": "ACTIVITY_ACTION_SEND_MAIL",
+                "param": [
+                    30
+                ]
+            }
+        ],
+        "onInvalidExec": []
+    },
+    {
+        "condId": 50350101,
+        "onValidExec": [
+            {
+                "type": "ACTIVITY_ACTION_ACCEPT_QUEST",
+                "param": [
+                    7265101
+                ]
+            },
+            {
+                "type": "ACTIVITY_ACTION_ACCEPT_QUEST",
+                "param": [
+                    7265102
+                ]
+            }
+        ],
+        "onInvalidExec": [
+            {
+                "type": "ACTIVITY_ACTION_CANCEL_QUEST",
+                "param": [
+                    72651
+                ]
+            }
+        ]
+    },
+    {
+        "condId": 50350102,
+        "onValidExec": [
+            {
+                "type": "ACTIVITY_ACTION_LOAD_DYNAMIC_GROUP",
+                "param": [
+                    133220190
+                ]
+            }
+        ],
+        "onInvalidExec": [
+            {
+                "type": "ACTIVITY_ACTION_UNLOAD_DYNAMIC_GROUP",
+                "param": [
+                    133220190
+                ]
+            }
+        ]
+    },
+    {
+        "condId": 50350103,
+        "onValidExec": [
+            {
+                "type": "ACTIVITY_ACTION_SEND_MAIL",
+                "param": [
+                    27
+                ]
+            }
+        ],
+        "onInvalidExec": []
     },
     {
         "condId": 6003001,
